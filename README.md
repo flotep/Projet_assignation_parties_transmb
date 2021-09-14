@@ -24,9 +24,11 @@ Fonctions qui permettent de réaliser des opérations mathématiques tels que
 le calcul du centre de masse, la transformation de coordonées par rapport à un centre,
 ainsi que la génération aléatoire de points sur la surface d'une sphère.
 """
+    
 def center_of_mass(list_coordinates): 
     """
     Calcul le centre de masse en fonction des coordonnées des atomes contenus dans une liste.
+    
     Parametres 
     ----------
     list_coordinates : liste
@@ -41,6 +43,7 @@ def center_of_mass(list_coordinates):
  def transform_coordinates(atom_coordinates,center_coordinates):
     """
     Transforme des coordonnées atomiques par rapport au centre des coordonnées indiqués.
+    
     Parametres 
     ----------
     atom_coordinates : list
@@ -57,6 +60,7 @@ def center_of_mass(list_coordinates):
   def sample_spherical(npoints,ndim=3):
     """
     Génère des vecteurs constitués d'échantillons indépendants provenant de trois distributions normales standards.
+    
     Parametres 
     ----------
     npoints : int
@@ -84,6 +88,7 @@ La formule mathématique utilisée pour le scoring est issue de l'algorithme ANV
 def get_orthogonal_planes(vector_list,x,y,z,d): 
     """
     Permet de calculer un plan orthogonal à un vecteur passant par le point (0,0,0).
+    
     Parametres 
     ----------
     vector_list : liste
@@ -98,10 +103,11 @@ def get_orthogonal_planes(vector_list,x,y,z,d):
         sous la forme [((a1*x)+(b1*y)+(c1*z)+d), (a2*x)+(b2*y)+(c2*z)+d]
     """
   
-def get_membrane_planes(plane, thickness =14, pos=0): # get the 2 initial equation plane of the membrane for each vector, can choose the thickness
+def get_membrane_planes(plane, thickness =14, pos=0): 
     """
     Permet d'obtenir les équations des deux plans d'une membrane à partir d'un plan orthogonal, 
     de l'épaisseur de la membrane voulue, et d'une position précise par rapport au vecteur (0 étant la position d'origine).
+    
     Parametres 
     ----------
     plane : equation sympy
@@ -122,6 +128,7 @@ def get_membrane_planes(plane, thickness =14, pos=0): # get the 2 initial equati
   def objective_function (mb1, mb2, hydrophilic_atom_coordinates, hydrophobic_atom_coordinates): #get the number of atom inside each membrane
     """
     Calcul le score d'une membrane selon la formule mathématique contenue dans la fonction.
+    
     Parametres 
     ----------
     mb1, mb2 : equation sympy
