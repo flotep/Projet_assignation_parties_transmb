@@ -19,7 +19,7 @@ Ce programme retourne :
 
 -Un fichier PDB édité avec des hétéroatomes ajoutés à la structure de la protéine pour représenter la membrane ('...'_edited.pdb). 
 
-En ouvrant ce fichier PDB édité depuis PyMOL, les couches de la membrane peuvent être aisément mise en évidence en entrant les commandes suivantes:
+En ouvrant ce fichier PDB édité depuis PyMOL, les couches de la membrane peuvent être aisément mises en évidence en entrant les commandes suivantes:
 
 ```
 
@@ -32,7 +32,7 @@ select mb2, resn mb2
 
 Il est alors possible de changer la couleur des hétéroatomes séléctionnés pour mieux visualiser les deux plans.
 
-Cet outil est insipiré de la méthode proposée par l'algorithme TMDET. 
+Cet outil est inspiré de la méthode proposée par l'algorithme TMDET. 
 
 
 ## math_function.py
