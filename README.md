@@ -142,6 +142,7 @@ def get_membrane_planes(plane, thickness =14, pos=0):
   
     
   def objective_function (mb1, mb2, hydrophilic_atom_coordinates, hydrophobic_atom_coordinates): 
+  
     Calcul le score d'une membrane selon la formule mathématique contenue dans la fonction.
     
     Parametres 
