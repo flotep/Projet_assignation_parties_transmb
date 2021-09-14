@@ -13,8 +13,15 @@ Détermine les zones transmembranaires d'une protéine à partir d'un fichier PD
 
 Ce programme retourne : 
 -Les deux équations des plans de la membrane optimale pour la protéine.
--Un fichier PDB avec les coordonnées transformées par rapport au centre de masse du fichier PDB en entrée.
--Un fichier PDB édité avec des hétéroatomes ajoutés à la structure de la protéine pour représenter la membrane. 
+
+-Un fichier PDB avec les coordonnées transformées par rapport au centre de masse du fichier PDB en entrée ('...'_transform.pdb).
+
+-Un fichier PDB édité avec des hétéroatomes ajoutés à la structure de la protéine pour représenter la membrane ('...'_edited.pdb). 
+
+En ouvrant ce fichier PDB édité depuis PyMOL, les couches de la membrane peuvent être aisément mise en évidence en entrant les commandes suivantes:
+select mb1, resn mb1
+select mb2, resn mb2
+Il est alors possible de changer la couleur des hétéroatomes séléctionnés pour mieux visualiser les deux plans.
 
 Cet outil est insipiré de la méthode proposée par l'algorithme TMDET. 
 
